@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cinza: #464646;
+    --cor-fundo: #F5F5F5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding:1% 5%;
+    font-family: "Raleway", sans-serif;
+    background-color: var(--cor-fundo);
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+/* Menu */
+.Menu-Principal {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.Menu-navegacao {
+    display: flex;
+    gap: 40px
+}
+.Menu-Item {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cinza);
+}
+
+/* Apresentação */
+.Apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding-top: 40px;
+
+}
+.cabecalho-apresentacao {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 750px;
+    
+}
+
+.Apresentacao-titulo {
+    font-size:52px;
+    font-weight: 700;
+    color: var(--cinza); 
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.Apresentacao-Sub_Titulo {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--cinza);
+}
+
+.Apresentacao-Redes {
+    display:flex;
+    gap:32px;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+}
+
+/* Sobre mim */
+.Sobre-Conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 750px;
+}
+
+.Sobre-Conteudo_T {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--cinza)
+}
+
+.Sobre-Conteudo_P {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cinza)
+}
+
+/* Skills, Hobbies */
+.Skills, .Hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 88px;
+    gap: 40px;
+}
+
+.Titulo-skills, .Titulo-hobbies {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--cinza);
+}
+
+.Itens-skills, .Itens-hobbies {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Elementos-skills, .Elementos-hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.Nome-skills, .Nome-hobbies {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--cinza);
+}
+
