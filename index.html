@@ -17,7 +17,7 @@
             <a class="Menu-Item" href="">Projetos</a>
             <a class="Menu-Item" href=""><strong>cri_suh@hotmail.com</strong></a>
         </nav>
-    </header>
+    </header><!--Menu-->
     <main class="Conteudo">
         <section class="Apresentacao">
             <header class="cabecalho-apresentacao">
@@ -30,14 +30,14 @@
                     <a href=""><img src="img/Link (3).png" alt=""></a>
             </header>
             <img class= "foto-perfil" src="img/foto-perfil.png" alt="Foto do Perfil">  
-        </section>
+        </section><!--Apresentacao-->
 
         <section class="Sobre-Conteudo">
                 <h2 class="Sobre-Conteudo_T">Sobre mim</h2>
                 <p class="Sobre-Conteudo_P">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi error molestiae, laboriosam aliquid reiciendis consequatur vero officiis. </p>
                 <p class="Sobre-Conteudo_P">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi error molestiae, laboriosam aliquid reiciendis consequatur vero officiis. </p>
             </div>
-        </section>
+        </section><!--Sobre-mim-->
 
         <section class="Hobbies-Soft_Skills">
             <div class="Skills">
@@ -91,11 +91,95 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section><!--Hobbies-soft_Skills-->
 
-        <section class="Formacao-Cursos"></section>
-        <section class="Experiecia-progamacao"></section>
-        <form class="Formulario-Contato" action=""></form>
+        <section class="Formacao-Cursos">
+            <h2 class="Formacao-titulo">Formação acadêmica</h2>
+            <ul class="Itens-formacao">
+                <li class="Elemento-formacao">
+                    <div class="Formacao-img">
+                        <img src="img/uninter.png" alt="logo uninter">
+                    </div>
+                    <div class="Formacao-descricao">
+                        <h3 class="Formacao-img-titulo">Análise e Desenvolvimento de Sistemas</h3>
+                        <p class="Formacao-sub-titulo">2023 - Cursando</p>
+                    </div>
+                </li>
+                <li class="Elemento-formacao">
+                    <div class="Formacao-img">
+                        <img src="img/oracle-alura.png" alt="Logo one e lura">
+                    </div>
+                    <div class="Formacao-descricao">
+                        <h3 class="Formacao-img-titulo">Formação Dev Front-end</h3>
+                        <p class="Formacao-sub-titulo">2024 - OracleNextEducation/ONEG7</p>
+                    </div>
+                </li>
+                <li class="Elemento-formacao">
+                    <div class="Formacao-img">
+                        <img src="img/wyden.png" alt="logo faculdade wyden">
+                    </div>
+                    <div class="Formacao-descricao">
+                        <h3 class="Formacao-img-titulo">Tecnólogo em Logística</h3>
+                        <p class="Formacao-sub-titulo">2021 - Concluído</p>
+                    </div>
+                </li>
+                
+            </ul>
+        </section><!--Formação-->
+        
+        <section class="Experiencia-progamacao">
+            <h2 class="Experiecia-titulo">Experiência profissional</h2>
+            <ul class="Lista-experiencia">
+                <li class="Itens-experiencia">
+                    <div class="img-experiencia">
+                        <img src="img/numero-secreto.png" alt="">
+                    </div>
+                    <div class="Conteudo-experiencia">
+                        <div class="Descricao-experiencia">
+                            <h3 class="Experiencia-titulo">Jogo número secreto</h3>
+                            <p class="Experiencia-sub-titulo">Challenge Alura</p>
+                        </div>
+                        <div class="Botao-experiencia">
+                            <button class="Bt-ex">Repositório</button>
+                            <button class="Bt-ex">Ver Demo</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </section><!--Experiências-->
+
+        <section class="Contato">
+            <div class="img-formulario">
+                <img src="img/unsplash_JYGnB9gTCls.png" alt="Imagem de contato">
+            </div>
+            <form class="Formulario-Contato" action="">
+                <h2 class="Formulario-titulo">Contato</h2>
+                <p class="Formulario-sub">Quer entrar em contato comigo?</p>
+                <p class="Formulario-sub">Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
+                <div class="form-grupo">
+                    <label for="nome"></label>
+                    <input type="text" id="name" placeholder="Seu nome..." required>
+                </div>
+                <div class="form-grupo">
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Seu email..." required>
+                </div>
+                <div class="form-grupo">
+                    <label for="subject"></label>
+                    <input type="text" id="subject" placeholder="Assunto..." required>
+                </div>
+                <div class="form-grupo">
+                    <label for="message"></label>
+                    <textarea name="message" id="message" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                </div>
+                <div class="form-botao">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+        
+
     </main>
     <footer class="rodape"></footer>
 
