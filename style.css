@@ -3,6 +3,7 @@
 :root {
     --cinza: #464646;
     --cor-fundo: #F5F5F5;
+    --cor-fundo2: #EAF2FD;
     --cor-botao: #2A7AE4;
 }
 
@@ -23,8 +24,11 @@ ol, ul, li {
 }
 
 section{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 20px;
+}
+
+.Sobre-Conteudo, .Formacao-Cursos, .Contato{
+    background-color: var(--cor-fundo2);
 }
 
 
@@ -90,7 +94,6 @@ section{
     display: flex;
     flex-direction: column;
     gap: 32px;
-    max-width: 750px;
 }
 
 .Sobre-Conteudo_T {
@@ -132,6 +135,11 @@ section{
     align-items: flex-start;
     gap: 8px;
 }
+.Elementos-skills,.Elementos-hobbies {
+    width: 150px;
+    background-color: #FFFFFF;
+    padding: 16px;
+}
 
 .Nome-skills, .Nome-hobbies {
     font-size: 16px;
@@ -144,6 +152,14 @@ section{
     font-size: 22px;
     font-weight: 700;
     color: var(--cinza);
+}
+
+.Formacao-img {
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-fundo);
+    padding: 16px;
+
 }
 
 .Formacao-sub-titulo {
@@ -260,10 +276,38 @@ section{
     color: var(--cinza);
 }
 
-.form-botao button {
-    width: 165px;
+.bt-form {
+    width:116px;
     height: 51px;
+    border: solid 1px var(--cor-botao);
+    color:var (--cor-fundo);
+    font-size: 16px;
+    font-weight: 400;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bt-form:hover {
+    background-color: var(--cor-botao);
+    color: var(--cor-fundo);
+}
+
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--cinza);
+    gap: 10px;
+}
+.Redes-sociais{
+    display: flex;
+    gap: 16px;
+}
+.Redes-sociais img{
+    border-radius: 50%;
 }
 
 
