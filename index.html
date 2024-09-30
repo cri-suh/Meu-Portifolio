@@ -6,16 +6,17 @@
     <title>Portifólio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="Menu-Principal">
         <img src="img/Logo.png" alt="Logo">
         <nav class="Menu-navegacao">
-            <a class="Menu-Item"href="">Sobre mim</a>
-            <a class="Menu-Item" href="">Skills</a>
-            <a class="Menu-Item" href="">Hobbies</a>
-            <a class="Menu-Item" href="">Formação</a>
-            <a class="Menu-Item" href="">Projetos</a>
-            <a class="Menu-Item" href=""><strong>cri_suh@hotmail.com</strong></a>
+            <a class="Menu-Item"href="#Sobre-Conteudo">Sobre mim</a>
+            <a class="Menu-Item" href="#Skills">Skills</a>
+            <a class="Menu-Item" href="#Hobbies">Hobbies</a>
+            <a class="Menu-Item" href="#Formacao-Cursos">Formação</a>
+            <a class="Menu-Item" href="#Experiencia-progamacao">Projetos</a>
+            <a class="Menu-Item" href="#Contato"><strong>cri_suh@hotmail.com</strong></a>
         </nav>
     </header><!--Menu-->
     <main class="Conteudo">
@@ -24,15 +25,17 @@
                 <h1 class="Apresentacao-titulo">Olá, meu nome é Cristiano e construo páginas web</h1>
                 <p class="Apresetacao-Sub_Titulo">Eu estou me especializando em lorem ipsum sit amet consectetur e atualmente estou participando no projeto Oracle ONE na Alura.</p>
                 <div class="Apresentacao-Redes">
-                    <a href=""><img src="img/Link.png" alt=""></a>
-                    <a href=""><img src="img/Link (1).png" alt=""></a>
-                    <a href=""><img src="img/Link (2).png" alt=""></a>
-                    <a href=""><img src="img/Link (3).png" alt=""></a>
+                    <a href="https://github.com/cri-suh"><img src="img/Link.png" alt="icon-github"></a>
+                    <a href="https://www.linkedin.com/in/cristiano-silva-745815139/"><img src="img/Link (1).png" alt="icon-linkedin"></a>
+                    <a href="https://www.instagram.com/cri_sg89/"><img src="img/Link (2).png" alt="icon-instagram"></a>
+                    <a href="img/curriculo.pdf" target="_blank"><img src="img/Link (3).png" alt="arquivo-currículo"></a>
+                    <a href="img/curriculo.pdf" class="botao-curriculo" target="_blank" download="curriculo.pdf">Baixar currículo</a>
+                </div>
             </header>
             <img class= "foto-perfil" src="img/foto-perfil.png" alt="Foto do Perfil">  
         </section><!--Apresentacao-->
 
-        <section class="Sobre-Conteudo">
+        <section class="Sobre-Conteudo" id="Sobre-Conteudo">
                 <h2 class="Sobre-Conteudo_T">Sobre mim</h2>
                 <p class="Sobre-Conteudo_P">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi error molestiae, laboriosam aliquid reiciendis consequatur vero officiis. </p>
                 <p class="Sobre-Conteudo_P">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi error molestiae, laboriosam aliquid reiciendis consequatur vero officiis. </p>
@@ -40,7 +43,7 @@
         </section><!--Sobre-mim-->
 
         <section class="Hobbies-Soft_Skills">
-            <div class="Skills">
+            <div class="Skills" id="Skills">
                 <h2 class="Titulo-skills">Skills</h2>
                 <ul class="Itens-skills">
                     <li class="Elementos-skills">
@@ -62,7 +65,7 @@
                 </ul>
             </div>
 
-            <div class="Hobbies">
+            <div class="Hobbies" id="Hobbies">
                 <h2 class="Titulo-hobbies">Hobbies</h2>
                 <ul class="Itens-hobbies">
                     <li class="Elementos-hobbies">
@@ -93,7 +96,7 @@
             </div>
         </section><!--Hobbies-soft_Skills-->
 
-        <section class="Formacao-Cursos">
+        <section class="Formacao-Cursos" id="Formacao-Cursos">
             <h2 class="Formacao-titulo">Formação acadêmica</h2>
             <ul class="Itens-formacao">
                 <li class="Elemento-formacao">
@@ -127,21 +130,51 @@
             </ul>
         </section><!--Formação-->
         
-        <section class="Experiencia-progamacao">
-            <h2 class="Experiecia-titulo">Experiência profissional</h2>
+        <section class="Experiencia-progamacao" id="Experiencia-progamacao">
+            <h2 class="Experiencia-titulo">Experiência profissional</h2>
             <ul class="Lista-experiencia">
                 <li class="Itens-experiencia">
                     <div class="img-experiencia">
-                        <img src="img/numero-secreto.png" alt="">
+                        <img src="img/numero-secreto.png" alt="imagem no jogo">
                     </div>
                     <div class="Conteudo-experiencia">
                         <div class="Descricao-experiencia">
                             <h3 class="Experiencia-titulo">Jogo número secreto</h3>
-                            <p class="Experiencia-sub-titulo">Challenge Alura</p>
+                            <p class="Experiencia-sub-titulo">Challenge Alura<p>
                         </div>
                         <div class="Botao-experiencia">
-                            <button class="Bt-ex">Repositório</button>
-                            <button class="Bt-ex">Ver Demo</button>
+                            <button class="Bt-ex" onclick="window.location.href='https://github.com/cri-suh/jogo-do-numero-secreto.git';">Repositório</button>
+                            <button class="Bt-ex" onclick="window.location.href='https://jogo-teal-gamma.vercel.app/';" >Ver Demo</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="Itens-experiencia">
+                    <div class="img-experiencia">
+                        <img src="img/cs-code.png" alt=" foto do web site cs-code">
+                    </div>
+                    <div class="Conteudo-experiencia">
+                        <div class="Descricao-experiencia">
+                            <h3 class="Experiencia-titulo">Projeto Website</h3>
+                            <p class="Experiencia-sub-titulo">Danki Code</p>
+                        </div>
+                        <div class="Botao-experiencia">
+                            <button class="Bt-ex" onclick="window.location.href='https://github.com/cri-suh/projeto_frontend_final';">Repositório</button>
+                            <button class="Bt-ex" onclick="window.location.href='https://projeto-frontend-danki-code-rho.vercel.app/';" >Ver Demo</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="Itens-experiencia">
+                    <div class="img-experiencia">
+                        <img src="img/landing-page.png" alt="Foto da pagina web">
+                    </div>
+                    <div class="Conteudo-experiencia">
+                        <div class="Descricao-experiencia">
+                            <h3 class="Experiencia-titulo">Landing Page</h3>
+                            <p class="Experiencia-sub-titulo">Danki Code</p>
+                        </div>
+                        <div class="Botao-experiencia">
+                            <button class="Bt-ex" onclick="window.location.href='https://github.com/cri-suh/Landing-Page';">Repositório</button>
+                            <button class="Bt-ex" onclick="window.location.href='https://landing-page-nu-ashen.vercel.app/';" >Ver Demo</button>
                         </div>
                     </div>
                 </li>
@@ -149,7 +182,7 @@
 
         </section><!--Experiências-->
 
-        <section class="Contato">
+        <section class="Contato" id="Contato">
             <div class="img-formulario">
                 <img src="img/unsplash_JYGnB9gTCls.png" alt="Imagem de contato">
             </div>
@@ -160,18 +193,22 @@
                 <div class="form-grupo">
                     <label for="nome"></label>
                     <input type="text" id="name" placeholder="Seu nome..." required>
+                    <span id="nameErro" style="color: red; display: none;">Insira seu nome</span>
                 </div>
                 <div class="form-grupo">
                     <label for="email"></label>
                     <input type="email" id="email" placeholder="Seu email..." required>
+                    <span id="emailErro" style="color: red; display: none;">Por favor, insira um email válido</span>
                 </div>
                 <div class="form-grupo">
                     <label for="subject"></label>
                     <input type="text" id="subject" placeholder="Assunto..." required>
+                    <span id="subjectErro" style="color: red; display: none;">máximo 50 caracteres</span>
                 </div>
                 <div class="form-grupo">
                     <label for="message"></label>
                     <textarea name="message" id="message" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                    <span id="messageErro" style="color: red; display: none;">Deve ter pelo o máximo de 300 caracteres</span>
                 </div>
                 <div class="form-botao">
                     <button type="submit" class="bt-form">Enviar</button>
@@ -183,15 +220,16 @@
     <footer class="rodape">
         <p>Desenvolvido por Cristiano Silva</p>
         <div class="Redes-sociais">
-            <a href="#" aria-label="Instagram">
+            <a href="https://www.instagram.com/cri_sg89/" aria-label="Instagram">
                 <img src="img/instagram.png" alt="Instagram"></a>
-            <a href="#" aria-label="Github">
+            <a href="https://github.com/cri-suh" aria-label="Github">
                 <img src="img/github.png" alt="Instagram"></a>
-            <a href="#" aria-label="Linkedin">
+            <a href="https://www.linkedin.com/in/cristiano-silva-745815139/" aria-label="Linkedin">
                 <img src="img/linkedin.png" alt="Instagram"></a>
         </div>
     </footer>
 
+    <script src="script.js"></script>
     
 </body>
 </html>

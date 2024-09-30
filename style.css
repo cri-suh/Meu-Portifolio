@@ -85,6 +85,17 @@ section{
     gap:32px;
 }
 
+.botao-curriculo {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color:var(--cor-botao)
+    
+}
+.botao-curriculo:hover {
+    border-bottom:  1px solid var(--cor-botao);  
+}
+
 .foto-perfil {
     border-radius: 50%;
 }
@@ -175,9 +186,19 @@ section{
     align-items: center;
     gap: 20px;
 }
+.Itens-experiencia:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.Lista-experiencia {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
 
 .img-experiencia img{
     border-radius: 8px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .Conteudo-experiencia {
@@ -310,5 +331,132 @@ section{
     border-radius: 50%;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+    .Menu-Principal img {
+        max-width: 100px;  
+    }
+    .Menu-Item:nth-child(1),
+    .Menu-Item:nth-child(2),
+    .Menu-Item:nth-child(3),
+    .Menu-Item:nth-child(4),
+    .Menu-Item:nth-child(5) {
+        display: none;
+    }
+    .cabecalho-apresentacao {
+        width: 524px;
+    }
+    .Apresentacao-titulo {
+        font-size: 2rem;
+    }
+    .foto-perfil {
+        width: 146px;
+    }
+    .Itens-experiencia:nth-child(even){
+    flex-direction: column;
+    }
 
+    .Itens-experiencia {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    
+    }
+    .img-experiencia img {
+        width: 100%;
+        height: auto;  
+    }
 
+    h1 {
+        font-size: 2rem; 
+    }
+    p, a, li {
+        font-size: 1rem; 
+    }
+    .Bt-ex {
+        font-size: 1rem; 
+    }
+    .Itens-formacao, .Itens-skills, .Itens-hobbies{
+        gap: 1rem;
+    }
+    .img-formulario {
+        display: none;
+    }
+}
+
+@media (min-width:360px) and (max-width: 767px) {
+    header img {
+        width: 134px; 
+     }
+    .Apresentacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 8px
+    }
+       
+    .foto-perfil {
+        max-width: 150px;
+    }
+    .Menu-Item:nth-child(1),
+    .Menu-Item:nth-child(2),
+    .Menu-Item:nth-child(3),
+    .Menu-Item:nth-child(4),
+    .Menu-Item:nth-child(5) {
+        display: none;
+    }
+    .cabecalho-apresentacao {
+        width: 100%;
+        order: 2;
+        gap: 10px;
+    }
+    .Apresentacao-titulo {
+        font-size: 2rem;
+    }
+    .Apresentacao-Redes{
+        display: none;
+    }
+    
+    .Itens-skills, .Itens-hobbies {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+        width: 100%;
+        padding: 0 10px;
+        
+    }
+    .Elementos-skills, .Elementos-hobbies {
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .Formacao-Cursos {
+        width: 100%;
+    }
+    .Itens-formacao{
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .Elemento-formacao {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .Itens-experiencia:nth-child(even){
+        flex-direction: column;
+        }
+    
+    .Itens-experiencia {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        }
+    .img-experiencia img {
+        width: 100%;
+        height: auto;  
+    }
+    .img-formulario {
+        display: none;
+    }
+}
