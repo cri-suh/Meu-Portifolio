@@ -412,7 +412,15 @@ section{
     .Apresentacao-titulo {
         font-size: 2rem;
     }
-    .Apresentacao-Redes{
+    .Apresentacao-Redes {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+    .Apresentacao-Redes a:nth-child(1),
+    .Apresentacao-Redes a:nth-child(2),
+    .Apresentacao-Redes a:nth-child(3) {
         display: none;
     }
     
@@ -431,6 +439,10 @@ section{
     }
     .Formacao-Cursos {
         width: 100%;
+    }
+    .Formacao-titulo {
+        display: flex;
+        text-align: center;
     }
     .Itens-formacao{
         display: flex;
