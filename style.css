@@ -73,7 +73,9 @@ section{
     color: var(--cinza); 
     text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
 }
-
+.Apresentacao-titulo strong{
+    color: var(--cor-botao);
+}
 .Apresentacao-Sub_Titulo {
     font-size: 22px;
     font-weight: 400;
@@ -89,7 +91,7 @@ section{
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
-    color:var(--cor-botao)
+    color:var(--cor-botao);
     
 }
 .botao-curriculo:hover {
@@ -110,13 +112,14 @@ section{
 .Sobre-Conteudo_T {
     font-size: 32px;
     font-weight: 700;
-    color: var(--cinza)
+    color: var(--cinza);
 }
 
 .Sobre-Conteudo_P {
     font-size: 16px;
     font-weight: 400;
-    color: var(--cinza)
+    color: var(--cinza);
+   
 }
 
 /* Section - Skills, Hobbies, Formação Cursos, Experiências */
@@ -126,6 +129,11 @@ section{
     align-items: center;
     margin-top: 88px;
     gap: 40px;
+}
+
+.Elementos-hobbies img {
+    width: 34px;
+    
 }
 
 .Titulo-skills, .Titulo-hobbies, .Formacao-titulo, .Experiecia-titulo {
@@ -313,6 +321,7 @@ section{
     color: var(--cor-fundo);
 }
 
+/* Rodapé */
 .rodape {
     display: flex;
     align-items: center;
@@ -411,6 +420,9 @@ section{
     }
     .Apresentacao-titulo {
         font-size: 2rem;
+    }
+    .Apresentacao-Redes img {
+        width: 100%;
     }
     .Apresentacao-Redes {
         display: flex;
