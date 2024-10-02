@@ -12,8 +12,8 @@ Este portfólio não apenas reflete meu aprendizado e crescimento ao longo do cu
 ## Tecnologias Utilizadas
 - **HTML5**
 - **CSS3 (Flexbox)**
+- **JAVASCRIPT**
 
-### Observação:
-em construção...
+
 
 
