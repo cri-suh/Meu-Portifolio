@@ -1,3 +1,8 @@
+document.getElementById('btMobile').addEventListener('click', function() {
+    const menu = document.querySelector('.Menu');
+    menu.classList.toggle('active');
+});
+
 
 
 document.querySelector('.bt-form').addEventListener('click', function(event) {
