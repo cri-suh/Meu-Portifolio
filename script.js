@@ -1,8 +1,11 @@
-document.getElementById('btMobile').addEventListener('click', function() {
-    const menu = document.querySelector('.Menu');
-    menu.classList.toggle('active');
-});
+//Menu Mobile
+const btMobile = document.getElementById('btMobile');
+const menu = document.querySelector('.Menu');
 
+btMobile.addEventListener('click', function() {
+    menu.classList.toggle('active');
+    
+});
 
 
 document.querySelector('.bt-form').addEventListener('click', function(event) {

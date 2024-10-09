@@ -425,7 +425,7 @@ section{
         background: var(--cor-fundo2);
         height: 0;
         z-index: 1000;
-        transition: height 0.6s ease, opacity 0.6s ease; 
+        transition: height .9s ease, opacity .9s ease; 
         visibility: hidden;
         opacity: 0;
         overflow-y: 0;
@@ -435,7 +435,7 @@ section{
         height: calc(100vh - 70px);
         visibility: visible;
         opacity: 1;
-        display: flex; 
+        display: flex;
         flex-direction: column;
 
     }
@@ -459,9 +459,7 @@ section{
     .foto-perfil {
         max-width: 150px;
     }
-    .Menu-navegacao {
-        display: none;
-    }
+   
     .cabecalho-apresentacao {
         width: 100%;
         order: 2;
