@@ -4,9 +4,7 @@ const menu = document.querySelector('.Menu');
 
 btMobile.addEventListener('click', function() {
     menu.classList.toggle('active');
-    
 });
-
 
 document.querySelector('.bt-form').addEventListener('click', function(event) {
     event.preventDefault();
@@ -25,7 +23,8 @@ document.querySelector('.bt-form').addEventListener('click', function(event) {
 
     let hasError = false;
 
-    if (nameInput.value.trim() === '' || nameInput.value.lenght > 5) {
+    
+    if (nameInput.value.trim() === '' || nameInput.value.length < 5) {
         nameErro.style.display = 'block';
         hasError = true;
     } else {
@@ -37,10 +36,10 @@ document.querySelector('.bt-form').addEventListener('click', function(event) {
     if (emailInput.value.trim() === '' || !emailRegex.test(emailInput.value)) {
         emailErro.style.display = "block";
         emailInput.style.borderColor = "red"; 
+        hasError = true;
     } else {
         emailErro.style.display = "none";
-        emailInput.style.borderColor = "green"
-
+        emailInput.style.borderColor = "green";
     }
 
     if (subjectInput.value.trim() === '' || subjectInput.value.length > 50) {
@@ -53,14 +52,15 @@ document.querySelector('.bt-form').addEventListener('click', function(event) {
 
     if (messageInput.value.trim() === '' || messageInput.value.length > 300) {
         messageErro.style.display = 'block';
-        messageErro.textContent = messageInput.value.trim() === '' ? 'O campo não pode ficar vazio':'Máximo 50 caracteres';
+        messageErro.textContent = messageInput.value.trim() === '' ? 'O campo não pode ficar vazio' : 'Máximo 300 caracteres';
         hasError = true;
     } else {
         messageErro.style.display = 'none';
     }
 
+    // Se não houver erros, envie o formulário
     if (!hasError) {
-        alert('Formulário enviado com sucesso!');
-        this.submit();
+        const form = document.querySelector('form'); 
+        form.submit();
     }
 });

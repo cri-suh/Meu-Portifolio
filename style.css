@@ -13,6 +13,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     padding:1% 5%;
     font-family: "Raleway", sans-serif;
@@ -41,6 +46,7 @@ section{
     display: flex;
     align-items: center;
     justify-content:space-between;
+    
 }
 
 .Menu-navegacao {
@@ -133,6 +139,7 @@ section{
     align-items: center;
     margin-top: 88px;
     gap: 40px;
+
 }
 
 .Elementos-hobbies img {
@@ -323,6 +330,16 @@ section{
 .bt-form:hover {
     background-color: var(--cor-botao);
     color: var(--cor-fundo);
+}
+
+.whatssap img {
+    height: 60px;
+}
+
+.whatssap {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
 }
 
 /* Rodapé */
