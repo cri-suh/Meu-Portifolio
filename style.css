@@ -23,6 +23,7 @@ body {
     padding:1% 5%;
     font-family: "Raleway", sans-serif;
     background-color: var(--cor-fundo);
+    overflow-x: hidden;
 }
 
 ol, ul, li {
@@ -339,7 +340,7 @@ section{
 
 .whatssap {
     position: fixed;
-    bottom: 15px;
+    bottom: 95px;
     right: 15px;
 }
 
