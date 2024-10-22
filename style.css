@@ -23,7 +23,7 @@ body {
     padding:1% 5%;
     font-family: "Raleway", sans-serif;
     background-color: var(--cor-fundo);
-    overflow-x: hidden;
+    
 }
 
 ol, ul, li {
@@ -416,6 +416,9 @@ section{
 }
 
 @media (min-width:360px) and (max-width: 767px) {
+    body {
+        overflow-x: hidden;
+    }
     .Menu-Principal {
         margin: 10px 0;
     }
