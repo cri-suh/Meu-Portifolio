@@ -366,9 +366,14 @@ section{
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+    html, body {
+        overflow-x: hidden; /* Previne overflow horizontal */
+    }
+    
     .Menu-Principal img {
         max-width: 100px;  
     }
+
     .Menu-Item:nth-child(1),
     .Menu-Item:nth-child(2),
     .Menu-Item:nth-child(3),
@@ -376,25 +381,31 @@ section{
     .Menu-Item:nth-child(5) {
         display: none;
     }
+
     .cabecalho-apresentacao {
         width: 524px;
+        max-width: 100%; /* Previne que o elemento ultrapasse a largura da tela */
     }
+
     .Apresentacao-titulo {
         font-size: 2rem;
     }
+
     .foto-perfil {
         width: 146px;
     }
-    .Itens-experiencia:nth-child(even){
-    flex-direction: column;
+
+    .Itens-experiencia:nth-child(even) {
+        flex-direction: column;
     }
 
     .Itens-experiencia {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-    
+        width: 100%; /* Garante que o elemento não ultrapasse a largura */
     }
+
     .img-experiencia img {
         width: 100%;
         height: auto;  
@@ -403,53 +414,61 @@ section{
     h1 {
         font-size: 2rem; 
     }
+
     p, a, li {
         font-size: 1rem; 
     }
+
     .Bt-ex {
         font-size: 1rem; 
     }
-    .Itens-formacao, .Itens-skills, .Itens-hobbies{
+
+    .Itens-formacao, .Itens-skills, .Itens-hobbies {
         gap: 1rem;
     }
+
     .img-formulario {
         display: none;
     }
 }
 
-@media (min-width:360px) and (max-width: 767px) {
+@media (min-width: 360px) and (max-width: 767px) {
+    html, body {
+        overflow-x: hidden; /* Previne overflow horizontal */
+    }
+
     .Menu-Principal {
         margin: 10px 0;
     }
 
     #btMobile {
-        display:block;
+        display: block;
     }
 
     .Menu i {
-       font-size: 24px;
-       color: var(--cor-botao);
-       padding: 2px;
-       cursor: pointer; 
-
+        font-size: 24px;
+        color: var(--cor-botao);
+        padding: 2px;
+        cursor: pointer;
     }
+
     .Menu i:hover {
         background-color: #2a7be417;
     }
-   
+
     .Menu-navegacao {
         text-align: center;
         position: absolute;
         width: 100%;
-        top:70px;
-        right: 0px;
+        top: 70px;
+        right: 0;
         background: var(--cor-fundo2);
         height: 0;
         z-index: 1000;
-        transition: height .9s ease, opacity .9s ease; 
+        transition: height 0.9s ease, opacity 0.9s ease;
         visibility: hidden;
         opacity: 0;
-        overflow-y: 0;
+        overflow-y: hidden;
     }
 
     .Menu.active .Menu-navegacao {
@@ -458,7 +477,6 @@ section{
         opacity: 1;
         display: flex;
         flex-direction: column;
-
     }
 
     .Menu-navegacao a {
@@ -466,89 +484,102 @@ section{
         margin: 0 1rem;
         border-bottom: 2px solid rgba(0, 0, 0, .05);
     }
-    
+
     header img {
-        width: 134px; 
-     }
+        width: 134px;
+    }
+
     .Apresentacao {
         display: flex;
         flex-direction: column;
-        align-items: center; 
-        gap: 8px
+        align-items: center;
+        gap: 8px;
+        width: 100%; /* Certifica-se de que não ultrapasse a largura da viewport */
     }
-       
+
     .foto-perfil {
         max-width: 150px;
     }
-   
+
     .cabecalho-apresentacao {
         width: 100%;
         order: 2;
         gap: 10px;
     }
+
     .Apresentacao-titulo {
         font-size: 2rem;
     }
+
     .Apresentacao-Redes img {
         width: 100%;
     }
+
     .Apresentacao-Redes {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-        
     }
+
     .Apresentacao-Redes a:nth-child(1),
     .Apresentacao-Redes a:nth-child(2),
     .Apresentacao-Redes a:nth-child(3) {
         display: none;
     }
-    
+
     .Itens-skills, .Itens-hobbies {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        gap: 20px; 
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
         width: 100%;
         padding: 0 10px;
-        
     }
+
     .Elementos-skills, .Elementos-hobbies {
         width: 100%;
         padding: 20px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
+
     .Formacao-Cursos {
         width: 100%;
     }
+
     .Formacao-titulo {
         display: flex;
         text-align: center;
     }
-    .Itens-formacao{
+
+    .Itens-formacao {
         display: flex;
         flex-direction: column;
         gap: 32px;
     }
+
     .Elemento-formacao {
         display: flex;
         flex-direction: column;
         gap: 32px;
     }
-    .Itens-experiencia:nth-child(even){
+
+    .Itens-experiencia:nth-child(even) {
         flex-direction: column;
-        }
-    
+    }
+
     .Itens-experiencia {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        
-        }
+        width: 100%;
+    }
+
     .img-experiencia img {
         width: 100%;
-        height: auto;  
+        height: auto;
     }
+
     .img-formulario {
         display: none;
     }
 }
+
