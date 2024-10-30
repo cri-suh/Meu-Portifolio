@@ -159,7 +159,12 @@ section{
 .Itens-skills, .Itens-hobbies, .Itens-formacao {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
+}
+
+.Elemento-formacao {
+    margin-top: 20px;
 }
 
 .Elementos-skills, .Elementos-hobbies, .Formacao-descricao {
